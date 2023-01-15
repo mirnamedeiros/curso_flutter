@@ -1,4 +1,4 @@
-#Sun Jan 15 07:06:03 BRT 2023
+#Sun Jan 15 09:14:09 BRT 2023
 base.0=/home/mirnamedeiros/Documentos/curso_flutter/expenses/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
 renamed.0=classes.dex
 path.0=classes.dex
