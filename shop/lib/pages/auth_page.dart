@@ -22,50 +22,48 @@ class AuthPage extends StatelessWidget {
               ),
             ),
           ),
-          Container(
-            width: double.infinity,
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: [
-                Container(
-                  margin: const EdgeInsets.only(bottom: 20),
-                  padding: const EdgeInsets.symmetric(
-                    vertical: 10,
-                    horizontal: 70,
-                  ),
-                  width: deviceSize.width * 0.75,
-                  decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(20),
-                      color: Colors.deepPurple.shade200,
-                      boxShadow: const [
-                        BoxShadow(
-                          blurRadius: 8,
-                          color: Colors.black26,
-                          offset: Offset(0, 2),
-                        )
-                      ]),
-                  child: Text(
-                    'Unknown Store',
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                      fontSize: 35,
-                      fontFamily: 'Anton',
-                      color:
-                          Theme.of(context).primaryTextTheme.headline6?.color,
+          Center(
+            child: SingleChildScrollView(
+              child: Container(
+                width: double.infinity,
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+                    Container(
+                      margin: const EdgeInsets.only(bottom: 20),
+                      padding: const EdgeInsets.symmetric(
+                        vertical: 10,
+                        horizontal: 70,
+                      ),
+                      width: deviceSize.width * 0.75,
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(20),
+                          color: Colors.deepPurple.shade200,
+                          boxShadow: const [
+                            BoxShadow(
+                              blurRadius: 8,
+                              color: Colors.black26,
+                              offset: Offset(0, 2),
+                            )
+                          ]),
+                      child: Text(
+                        'Unknown Store',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                          fontSize: 35,
+                          fontFamily: 'Anton',
+                          color: Theme.of(context)
+                              .primaryTextTheme
+                              .headline6
+                              ?.color,
+                        ),
+                      ),
                     ),
-                  ),
+                    AuthForm(),
+                  ],
                 ),
-                // Container(
-                //   width: deviceSize.width * 0.75,
-                //   child: Image.asset(
-                //     'assets/images/store_front.png',
-                //     alignment: Alignment.center,
-                //   ),
-                // ),
-                // Center(child: Text('Image by storyset on Freepik')),
-                AuthForm(),
-              ],
+              ),
             ),
           ),
         ],
